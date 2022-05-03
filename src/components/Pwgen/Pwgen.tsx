@@ -2,7 +2,15 @@ import { useState, useEffect } from 'react'
 import copy from 'copy-text-to-clipboard'
 import pwgen from '@/utils/pwgen'
 
-export default function Pwgen () {
+interface PwgenProps {
+  min?: number
+  max?: number
+}
+
+export default function Pwgen ({
+  min = 4,
+  max = 32,
+}: PwgenProps) {
   const [ symbols, setSymbols ] = useState(true)
   const [ numbers, setNumbers ] = useState(true)
   const [ len, setLen ] = useState(8)
@@ -42,8 +50,8 @@ export default function Pwgen () {
               type="range"
               className="form-range"
               id="len"
-              min="4"
-              max="32"
+              min={min}
+              max={max}
               step="1"
               value={len}
               onChange={event => setLen(event.target.valueAsNumber)}
