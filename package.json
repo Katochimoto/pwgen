@@ -61,7 +61,6 @@
     "style-loader": "^3.3.1",
     "stylelint": "14.8.1",
     "stylelint-config-standard-scss": "3.0.0",
-    "svg-sprite-loader": "6.0.11",
     "svg-url-loader": "7.1.1",
     "svgo-loader": "3.0.0",
     "terser-webpack-plugin": "5.3.1",

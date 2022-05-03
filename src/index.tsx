@@ -1,5 +1,4 @@
-import './sprite'
-import './assets/style/main.scss'
+import './style/main.scss'
 import { createRoot } from 'react-dom/client'
 import { App } from './components/App'
 
