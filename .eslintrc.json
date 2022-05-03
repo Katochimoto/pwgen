@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/semi": [ "error", "never" ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/space-before-function-paren": ["error", "always"],
+    "array-bracket-spacing": ["error", "always", { "objectsInArrays": false, "arraysInArrays": false }],
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+    "function-paren-newline": ["error", "multiline-arguments"],
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": ["error", "WithStatement", "BinaryExpression[operator='in']"],
+    "no-underscore-dangle": "off",
+    "operator-linebreak": ["error", "after"],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/sort-comp": "off",
+    "react/state-in-constructor": "off",
+    "semi": [ "error", "never" ],
+    "space-before-function-paren": ["error", "always"],
+    "react/jsx-filename-extension": "off",
+    "react/static-property-placement": "off",
+    "react/display-name": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off"
+  },
+  "settings": {
+    "import/core-modules": ["rxjs/operators"],
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  }
+}

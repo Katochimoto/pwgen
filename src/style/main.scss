@@ -1,0 +1,25 @@
+@import "./bootstrap";
+
+html,
+body,
+#app {
+  min-height: 100%;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+body {
+  overflow: hidden;
+  text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  padding:
+    env(safe-area-inset-top)
+    env(safe-area-inset-right)
+    env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}

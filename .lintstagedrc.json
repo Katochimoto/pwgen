@@ -1,0 +1,9 @@
+{
+  "*.{ts,tsx}": [
+    "yarn run lint-staged-lint",
+    "yarn run lint-staged-test"
+  ],
+  "*.scss_disabled": [
+    "yarn run lint-staged-stylelint"
+  ]
+}
