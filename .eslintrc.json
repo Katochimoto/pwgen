@@ -47,7 +47,6 @@
     "import/no-extraneous-dependencies": "off"
   },
   "settings": {
-    "import/core-modules": ["rxjs/operators"],
     "react": {
       "version": "detect"
     }

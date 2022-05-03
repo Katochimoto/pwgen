@@ -10,10 +10,7 @@
     "lint": "eslint . --ext .ts,.tsx",
     "stylelint": "stylelint src '**/*.scss'",
     "test": "jest --no-cache",
-    "test:watch": "jest --watch --no-cache --coverage=false",
-    "lint-staged-test": "jest --bail --findRelatedTests",
-    "lint-staged-lint": "eslint --ext .ts,.tsx --quiet --fix",
-    "lint-staged-stylelint": "stylelint '**/*.scss' --quiet --fix"
+    "test:watch": "jest --watch --no-cache --coverage=false"
   },
   "dependencies": {
     "bootstrap": "5.1.3",
