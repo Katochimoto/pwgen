@@ -1,0 +1,1 @@
+export { default as Pwgen } from './Pwgen'
