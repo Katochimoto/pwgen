@@ -28,7 +28,7 @@ const config: webpack.Configuration = {
   },
   output: {
     path: distRoot,
-    publicPath: '/',
+    publicPath: isDev ? '/' : 'https://katochimoto.github.io/pwgen/',
     clean: true,
     filename: '[contenthash].js',
     chunkFilename: '[contenthash].js',
