@@ -18,7 +18,7 @@ console.log('GIT version:', gitRevisionPlugin.version())
 console.log('GIT hash:', gitRevisionPlugin.commithash())
 
 const srcRoot = path.resolve(process.cwd(), 'src')
-const distRoot = path.resolve(process.cwd(), 'dist')
+const distRoot = path.resolve(process.cwd(), isDev ? 'dist' : 'docs')
 
 const config: webpack.Configuration = {
   mode: isDev ? 'development' : 'production',
